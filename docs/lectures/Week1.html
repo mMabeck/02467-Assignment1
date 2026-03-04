@@ -417,6 +417,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Survey Week 2</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../wiki_pages/Datasets.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Datasets</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -474,7 +480,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>In this course, we are going to read some parts of the amazing book by Matthew Salganik <a href="https://www.bitbybitbook.com/">“<em>Bit By Bit: Social Research in the Digital Age</em>”</a>. Salganik is a professor in Sociology at Princeton, and an active researcher in Computational Social Science. You can read the book online, but I encourage you to buy it.</p>
 <blockquote class="blockquote">
-<p><strong>Reading from the Bit by Bit book</strong>.</p>
 <p><em>Reading</em>: <a href="https://www.bitbybitbook.com/en/1st-ed/introduction/">Bit by Bit, chapter 1</a> Start by reading the Introduction of the book, where you will get you an understanding of the history of the field and the general framework.</p>
 <p><em>Reading 2</em>: <a href="https://www.bitbybitbook.com/en/1st-ed/ethics/">Bit by Bit, chapter 6</a> Read the Ethics chapter of the book. Here, I don’t expect you to read all the details. However, I want to make sure you get an overall understanding of the ethical challenges and some of the approaches that are used in the field to deal with these complex issues. You can focus on sections 6.4 and 6.6.</p>
 </blockquote>
@@ -511,9 +516,7 @@ You now have a sense of how digital data can be used to study society. Work in p
 <li>One ethical concern.</li>
 </ul></li>
 </ol>
-<p><strong>NOTE 1:</strong> Reach out during class/on Teams if you have doubts about the feasibility of your idea, or whether your research question makes sense.<br>
-<strong>NOTE 2:</strong> The goal of this exercise is for you to start reasoning about data sources and topics. You are not yet deciding the project you will work on for your final assignment.<br>
-<strong>NOTE 3:</strong> All group members should submit the survey answers. Identical answers are perfectly ok.</p>
+<p><strong>IMPORTANT:</strong> Reach out during class/on Teams if you have doubts about the feasibility of your idea, or whether your research question makes sense.</p>
 </blockquote>
 <div style="
   border:1px solid #5b2ca0;
@@ -601,11 +604,9 @@ As in the previous exercise, I recommend starting with your own idea. It can be 
 <h2 class="anchored" data-anchor-id="part-3-using-web-scraping-to-gather-data.">Part 3: Using web-scraping to gather data.</h2>
 <p>All right, so now it’s really time to start working on something a bit hands-on. The first thing we need to do is indeed to get DATA. As I said a few times by now, in this class we will do things from scratch. One of the ways to gather data from the web is to use web-scraping, which basically means getting information directly from web-pages. In the video below, I will give a brief overview on how to web-scrape web pages.</p>
 <blockquote class="blockquote">
-<p><strong><em>Video lecture</em></strong>: Watch the video below about web scraping.</p>
+<p><strong><em>Video lecture</em></strong>: Watch the video below about web scraping (you can find <a href="https://nbviewer.org/github/lalessan/comsocsci2026/blob/master/additional_notebooks/ScreenScraping.ipynb">here the notebook that I use in the video</a>)</p>
 </blockquote>
-<p>Here, you can find <a href="https://nbviewer.org/github/lalessan/comsocsci2024/blob/main/additional_notebooks/ScreenScraping.ipynb">the notebook that I use in the video</a>.</p>
-<p><strong>2026 update:</strong> The video below was recorded few years back. Since then, the Wikipedia page that I parse in the video has been updated, so you are not able to run the old notebook. <a href="https://nbviewer.org/github/lalessan/comsocsci2026/blob/master/additional_notebooks/ScreenScraping.ipynb">Here, you can find an updated notebook that you can run.</a>.</p>
-<div id="cell-16" class="cell">
+<div id="cell-16" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> YouTubeVideo</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"nK_d0UQp4cE"</span>,width<span class="op">=</span><span class="dv">600</span>, height<span class="op">=</span><span class="fl">337.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
