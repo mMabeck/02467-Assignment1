@@ -516,13 +516,13 @@ window.Quarto = {
 <blockquote class="blockquote">
 <p><strong>Exercise 1: Law of large numbers</strong>.</p>
 <ol type="1">
-<li>Sample <strong>N=10,000</strong> data points from a <a href="https://en.wikipedia.org/wiki/Normal_distribution">Gaussian Distribution</a> with parameters $= 0 $ and <span class="math inline">\(\sigma = 4\)</span>, using the <a href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.standard_normal.html"><code>np.random.standard_normal()</code></a> function. Store your data in a numpy array <span class="math inline">\(\mathbf{X}\)</span>.</li>
+<li>Sample <strong>N=10,000</strong> data points from a <a href="https://en.wikipedia.org/wiki/Normal_distribution">Gaussian Distribution</a> with parameters <span class="math inline">\(\mu=0\)</span> and <span class="math inline">\(\sigma=4\)</span>, using the <a href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.standard_normal.html"><code>np.random.standard_normal()</code></a> function. Store your data in a numpy array <span class="math inline">\(\mathbf{X}\)</span>.</li>
 <li>Create a figure.
 <ul>
 <li>Plot the distribution of the data in <span class="math inline">\(\mathbf{X}\)</span>.</li>
 </ul></li>
 <li>Compute the cumulative average of <span class="math inline">\(\mathbf{X}\)</span> (you achieve this by computing <span class="math inline">\(average(\{\mathbf{X}[0],..., \mathbf{X}[i-1]\})\)</span> for each index <span class="math inline">\(i \in [1, ..., N+1]\)</span> ). Store the result in an array.</li>
-<li>In a similar way, compute the cumulative standard error of <span class="math inline">\(\mathbf{X}\)</span>. <strong>Note</strong>: the standard error of a sample is defined as $ _{M} = $, where <span class="math inline">\(\sigma\)</span> is the sample standard deviation and <span class="math inline">\(n\)</span> is the sample size. Store the result in an array.</li>
+<li>In a similar way, compute the cumulative standard error of <span class="math inline">\(\mathbf{X}\)</span>. <strong>Note</strong>: the standard error of a sample is defined as <span class="math inline">\(\sigma_{M}=\frac{\sigma}{\sqrt(n)}\)</span>, where <span class="math inline">\(\sigma\)</span> is the sample standard deviation and <span class="math inline">\(n\)</span> is the sample size. Store the result in an array.</li>
 <li>Compute the ``true’’ values of the distribution mean and median <strong>{using the formulas}</strong> you find on the <a href="https://en.wikipedia.org/wiki/Normal_distribution">Wikipedia page of the Gaussian Distribution</a><br>
 </li>
 <li>Create a figure.
