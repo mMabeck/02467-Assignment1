@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 1 – Computational Social Science 2026</title>
+<title>Week 8 – Computational Social Science 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -286,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/Before_week_1.html">Lectures</a></li><li class="breadcrumb-item"><a href="../lectures/Week1.html">Week 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/Before_week_1.html">Lectures</a></li><li class="breadcrumb-item"><a href="../lectures/Week8.html">Week 8</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -331,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/Week1.html" class="sidebar-item-text sidebar-link active">
+  <a href="../lectures/Week1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 1</span></a>
   </div>
 </li>
@@ -373,7 +373,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/Week8.html" class="sidebar-item-text sidebar-link">
+  <a href="../lectures/Week8.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Week 8</span></a>
   </div>
 </li>
@@ -453,9 +453,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/Before_week_1.html">Lectures</a></li><li class="breadcrumb-item"><a href="../lectures/Week1.html">Week 1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/Before_week_1.html">Lectures</a></li><li class="breadcrumb-item"><a href="../lectures/Week8.html">Week 8</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Week 1</h1>
+<h1 class="title">Week 8</h1>
 </div>
 
 
@@ -472,215 +472,84 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>This first lecture will go over a few different topics to get you started:</p>
+<p>This week’s curriculum is about text analysis. The overview is</p>
 <ul>
-<li><p><strong>Part 1:</strong> You picked this course in <strong>Computational Social Science</strong> but… <em>What does that even mean??</em> The first thing we will do today is to learn a bit more about it by reading some chapters of the book and listen to a short lecture by me.</p></li>
-<li><p><strong>Part 2:</strong> In the second part of this class, I will introduce you to <strong>a topic we will work on for the rest of this course</strong> and I will ask you to reflect upon it.</p></li>
-<li><p><strong>Part 3:</strong> In the final part of this class, we will start working on something hands on. We will use <strong>Web scraping</strong> to gather some data.</p></li>
+<li>Finding the important words in a document (TF-IDF)</li>
+<li>Apply these tricks to understand what different communities in Computational Social Science are working on.</li>
 </ul>
-</section>
-<section id="part-1-intro-to-computational-social-science" class="level2">
-<h2 class="anchored" data-anchor-id="part-1-intro-to-computational-social-science">Part 1: Intro to Computational Social Science</h2>
-<p><em>What is Computational Social Science?</em> In the video below, I will give you some answers. There will be a little bit of history, example of topics and datasets, an overview of the methods, and some reflections on the challenges faced by researchers, including in relation to Ethics and Privacy.</p>
+<section id="part-1---words-that-characterize-computational-social-science-communities" class="level1">
+<h1>Part 1 - Words that characterize Computational Social Science communities</h1>
+<p>In this class, we’ll play around with how far we can get with simple strategies for looking at text. The video is Sune talking about a fun paper, which shows you how little is needed in order to reveal something very interesting about humans that produce text. Then, we’ll use a simple weighting scheme called TF-IDF to find the words in the Computational Social Science papers that charachterize different communities. Finally, we’ll visualize using word clouds (below is what I found). The wordclouds may not be immediately understandable. But if you do some research on the important words, you will find that the TF-IDF method extracts quite interesting information.</p>
+<p><img src="https://github.com/lalessan/comsocsci2024/blob/main/figures/tf_idf.png?raw=true" alt="Drawing" style="width: 1000px;"></p>
 <blockquote class="blockquote">
-<p><strong><em>Video lecture</em></strong>: Watch the video below about Computational Social Science</p>
+<p><strong>Video lecture</strong>: Simple methods reveal a lot. Sune talks a little bit about the paper: <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0073791">Personality, Gender, and Age in the Language of Social Media: The Open-Vocabulary Approach</a>.</p>
 </blockquote>
-<div id="cell-4" class="cell" data-scrolled="true" data-execution_count="4">
+<div id="cell-4" class="cell" data-scrolled="true" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> YouTubeVideo</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"3dA1GYdSg-A"</span>,width<span class="op">=</span><span class="dv">600</span>, height<span class="op">=</span><span class="fl">337.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-
-        <iframe width="600" height="337.5" src="https://www.youtube.com/embed/3dA1GYdSg-A" frameborder="0" allowfullscreen=""></iframe>
-        
-</div>
-</div>
-<p>In this course, we are going to read some parts of the amazing book by Matthew Salganik <a href="https://www.bitbybitbook.com/">“<em>Bit By Bit: Social Research in the Digital Age</em>”</a>. Salganik is a professor in Sociology at Princeton, and an active researcher in Computational Social Science. You can read the book online, but I encourage you to buy it.</p>
-<blockquote class="blockquote">
-<p><em>Reading</em>: <a href="https://www.bitbybitbook.com/en/1st-ed/introduction/">Bit by Bit, chapter 1</a> Start by reading the Introduction of the book, where you will get you an understanding of the history of the field and the general framework.</p>
-<p><em>Reading 2</em>: <a href="https://www.bitbybitbook.com/en/1st-ed/ethics/">Bit by Bit, chapter 6</a> Read the Ethics chapter of the book. Here, I don’t expect you to read all the details. However, I want to make sure you get an overall understanding of the ethical challenges and some of the approaches that are used in the field to deal with these complex issues. You can focus on sections 6.4 and 6.6.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Exercise 1: Design your own Computational Social Science project.</strong><br>
-You now have a sense of how digital data can be used to study society. Work in pairs.</p>
-<ol type="1">
-<li><strong>Start from an interesting social science question</strong>. Come up with one question about human behavior or society that you find interesting. Examples:
-<ul>
-<li>How does misinformation spread online?<br>
-</li>
-<li>How does working from home reshape when and where people spend time?</li>
-<li>What makes certain neighborhoods feel safer than others?</li>
-</ul></li>
-<li><strong>Make it “computational”.</strong> Briefly write:
-<ul>
-<li>What kind of digital data could help study this? (e.g., social media data, news, reviews, …) <strong>Important: Your data source must be something you could realistically access as a student (e.g., public datasets, open APIs, or data you could collect yourself)</strong></li>
-<li>Who/what are the units of analysis? (people, neighborhoods, communities, …)</li>
-<li>One measurable variable you could extract from data to answer your question.</li>
-</ul></li>
-<li><strong>Ethics check.</strong>
-<ul>
-<li>Name one ethical risk and how you might reduce it. You can refer to the areas of difficulties described in chapter 6.6 of Salganik’s book.</li>
-</ul></li>
-<li><strong>Submit.</strong> On <a href="https://learn.inside.dtu.dk/d2l/lms/survey/admin/surveys_manage.d2l?ou=296278">DTU Learn</a>, submit your <strong>best idea</strong> through the Survey “Design your own Computational Social Science project.”:
-<ul>
-<li>Research question<br>
-</li>
-<li>Data source<br>
-</li>
-<li>Unit of analysis</li>
-<li>One measurable variable<br>
-</li>
-<li>One ethical concern.</li>
-</ul></li>
-</ol>
-<p><strong>IMPORTANT:</strong> Reach out during class/on Teams if you have doubts about the feasibility of your idea, or whether your research question makes sense.</p>
-</blockquote>
-<div style="
-  border:1px solid #5b2ca0;
-  border-radius:10px;
-  margin:20px 0;
-  background:#ede0ff;
-  padding:22px;
-  color:#2b003d;
-  line-height:1.6;
-  max-width:100%;
-  box-sizing:border-box;
-  overflow-wrap:break-word;
-">
-<p>
-For this exercise, I strongly recommend that you first develop your research question and basic idea <strong>without using an LLM</strong>. Once you feel you have a solid research idea and a dataset, you can use an LLM to refine and improve your solution. <strong>Why not start with an LLM?</strong> Because:
-</p>
-<ul>
-<li>
-At the time of writing this exercise, even when prompted carefully, state-of-the-art LLMs (I tested ChatGPT 5.2) can suggest ideas that sound impressive but are not feasible
-</li>
-<li>
-By spending time srtuggling with problems yourself, you build deeper understanding (which means you get also better at spotting weaknesses/feasibility issues)
-</li>
-</ul>
-</div>
-</section>
-<section id="part-2-a-topic-we-will-work-on-for-the-rest-of-this-course" class="level2">
-<h2 class="anchored" data-anchor-id="part-2-a-topic-we-will-work-on-for-the-rest-of-this-course">Part 2 : A topic we will work on for the rest of this course</h2>
-<p>All right so, as I promised this course will be very hands-on. We will learn some of the methods and modelling approaches used in Computational Social Science and we will put this learning into practice. The way we will do it is that we will apply the methods we learn to study a specific topic throughout the rest of this course.</p>
-<p>In this video, I will explain to you what the whole project will be about. Ready? Watch the video below!</p>
-<blockquote class="blockquote">
-<p><strong><em>Video lecture</em></strong>: Watch the video below</p>
-</blockquote>
-<div id="cell-10" class="cell" data-execution_count="5">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> YouTubeVideo</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"uEJltY5Pv1U"</span>,width<span class="op">=</span><span class="dv">600</span>, height<span class="op">=</span><span class="fl">337.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"wkYvdfkVmlI"</span>,width<span class="op">=</span><span class="dv">800</span>, height<span class="op">=</span><span class="dv">450</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 
-        <iframe width="600" height="337.5" src="https://www.youtube.com/embed/uEJltY5Pv1U" frameborder="0" allowfullscreen=""></iframe>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/wkYvdfkVmlI" frameborder="0" allowfullscreen=""></iframe>
         
 </div>
 </div>
 <blockquote class="blockquote">
-<p><strong>Exercise 2 : Understanding Computational Social Science in a data-driven way</strong><br>
-In the rest of this course, we will do a meta-study on the field of Computational Social Science, by analyzing researchers, their collaborations, and their scientific production.</p>
-<p>Work in pairs. Think of <strong>one type of data</strong> you could collect to study the field (for example: publications, co-authorship networks, conference participation, social media presence, or research topics).</p>
-<p>For this one dataset, briefly answer:</p>
-<ul>
-<li>What is the data source?<br>
-</li>
-<li>What would this data help us understand about the field?<br>
-</li>
-<li>How would you practically collect it? (e.g., API, open dataset, scraping).<br>
-</li>
-<li>What is one limitation or bias of this data?<br>
-</li>
-<li>Go to <a href="https://learn.inside.dtu.dk/d2l/lms/survey/user/surveys_list.d2l?ou=296278">DTU Learn</a> and fill the Survey “<em>Data for Computational Social Science</em>”.</li>
-</ul>
-<p>Remember that in this exercise, there is not a single correct answer. There could be multiple ways to gather data, and different data sources could shed lights on different aspects of scientists’ works and interactions.</p>
-</blockquote>
-<div style="
-  border:1px solid #5b2ca0;
-  border-radius:10px;
-  margin:20px 0;
-  background:#ede0ff;
-  padding:22px;
-  color:#2b003d;
-  line-height:1.6;
-  max-width:100%;
-  box-sizing:border-box;
-  overflow-wrap:break-word;
-">
-<p>
-As in the previous exercise, I recommend starting with your own idea. It can be fun to then using an LLM to refine or stress-test it. For example, you could ask an LLM whether there are feasibility issues you may have missed.
-</p>
-</div>
-</section>
-<section id="prelude-to-part-3-basic-html" class="level2">
-<h2 class="anchored" data-anchor-id="prelude-to-part-3-basic-html">Prelude to part 3: Basic HTML</h2>
-<p>In the final part of this class, we will talk about web-scraping. For web-scraping, you need a little bit of knowledge about the structure of web-pages. The standard way to write web-bages is to use a language called HTML.</p>
-<p><strong>Useful tutorial:</strong> If you are not familiar with HTML, I recommend <a href="https://internetingishard.netlify.app/html-and-css/basic-web-pages/">reading this tutorial</a>.</p>
-<p><strong>Useful resource:</strong> HTML pages are built in a hierarchical structure and are composed of elements such as tables, titles, paragraphs, sections, etc. A complete list of HTML elements can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">here</a>.</p>
-</section>
-<section id="part-3-using-web-scraping-to-gather-data." class="level2">
-<h2 class="anchored" data-anchor-id="part-3-using-web-scraping-to-gather-data.">Part 3: Using web-scraping to gather data.</h2>
-<p>All right, so now it’s really time to start working on something a bit hands-on. The first thing we need to do is indeed to get DATA. As I said a few times by now, in this class we will do things from scratch. One of the ways to gather data from the web is to use web-scraping, which basically means getting information directly from web-pages. In the video below, I will give a brief overview on how to web-scrape web pages.</p>
-<blockquote class="blockquote">
-<p><strong><em>Video lecture</em></strong>: Watch the video below about web scraping (you can find <a href="https://nbviewer.org/github/lalessan/comsocsci2026/blob/master/additional_notebooks/ScreenScraping.ipynb">here the notebook that I use in the video</a>)</p>
-</blockquote>
-<div id="cell-16" class="cell" data-execution_count="6">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> YouTubeVideo</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>YouTubeVideo(<span class="st">"nK_d0UQp4cE"</span>,width<span class="op">=</span><span class="dv">600</span>, height<span class="op">=</span><span class="fl">337.5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="6">
-
-        <iframe width="600" height="337.5" src="https://www.youtube.com/embed/nK_d0UQp4cE" frameborder="0" allowfullscreen=""></iframe>
-        
-</div>
-</div>
-<blockquote class="blockquote">
-<p><strong>Exercise 3 : Web-scraping the list of participants to the International Conference in Computational Social Science</strong><br>
-It’s time to put things into practice. Remember that our goal will be to gather a dataset describing Computational Social Scientists and their work. As we have discussed, the field of Computational Social Science is loosely defined. To gather data, we will start from the list of researchers that have joined the most important scientific conference in Computational Social Science in 2025. The conference is called International Conference in Computational Social Science (<em>IC2S2</em> in short). The assumption here is that the scientists who contribute to this conference are at the core of the field of Computational Social Science.</p>
-<p>You can find the program of the 2025 edition of the conference at <a href="https://ic2s2-2025.org/program">this link</a>, and the list of organizers at <a href="https://ic2s2-2025.org/organization/">this link</a>. The conference program included many different contributions: keynote presentations, parallel talks, tutorials, posters.</p>
+<p><strong>Exercise 1: TF-IDF and the Computational Social Science communities.</strong> The goal for this exercise is to find the words charachterizing each of the communities of Computational Social Scientists. What you need for this exercise: .<br>
+* The assignment of each author to their network community, and the degree of each author (Week 6, Exercise 4). This can be stored in a dataframe or in two dictionaries, as you prefer.<br>
+* the tokenized <em>abstract</em> dataframe (Week 7, Exercise 2)</p>
 <ol type="1">
-<li><p>Inspect the HTML of the two pages and use web-scraping to get the names of all researchers that contributed to the conference in 2025. The goal is the following:</p>
-<ol type="i">
-<li><strong>get as many names as possible including:</strong> organizers, keynote speakers, chairs, authors of parallel talks and authors of posters;<br>
-</li>
-<li><strong>ensure that the collected names are complete and accuarate</strong> as reported in the website (e.g.&nbsp;both first name and family name);<br>
-</li>
-<li><strong>ensure that no name is repeated multiple times</strong> with slightly different spelling.</li>
-</ol></li>
-<li><p>Some ideas you can apply for success:</p>
-<ul>
-<li>Inspect the page through your web browser to identify the elements of the page that you want to collect. Ensure you understand the hierarchical structure of the page, and where the elements you are interested in are located within this structure.</li>
-<li>Use the <a href="https://pypi.org/project/beautifulsoup4/">BeautifulSoup Python package</a> to navigate through the hierarchy and extract the elements you need from the page.</li>
-<li>You can use the <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/#find-all">find_all</a> method to find elements that match specific filters. Check the <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/">documentation</a> of the library for detailed explanations on how to set filters.</li>
-<li>Parse the strings to ensure that you retrieve “clean” author names (e.g.&nbsp;remove commas, or other unwanted charachters).</li>
-<li>In some cases, the webpage only displays data that is actually loaded from an external file (for example a CSV or JSON file). If you notice this by inspecting the page, you may be able to download that file directly instead of scraping the HTML. This is much easier, cleaner, and less error-prone than parsing the rendered page.</li>
-</ul></li>
-<li><p>Create the set of unique researchers that joined the conference and store it into a file.</p>
-<ul>
-<li><em>Important:</em> If you notice any issue with the list of names you have collected (e.g.&nbsp;duplicate/incorrect names), come up with a strategy to clean your list as much as possible.</li>
-</ul></li>
-<li><p>Go to <a href="https://learn.inside.dtu.dk/d2l/lms/survey/user/surveys_list.d2l?ou=296278">DTU Learn</a> and fill the Survey “<em>Web Scraping</em>”.</p></li>
-<li><p>How many unique researchers do you get?</p></li>
-<li><p>Explain the process you followed to web-scrape the pages. Which choices did you make to accurately retreive as many names as possible? Which strategies did you use to assess the quality of your final list? Explain your reasoning and your choices.</p></li>
+<li>First, check out <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">the wikipedia page for TF-IDF</a>. Explain in your own words the point of TF-IDF.</li>
 </ol>
+<ul>
+<li>What does TF stand for?</li>
+<li>What does IDF stand for?</li>
+</ul>
+<ol start="2" type="1">
+<li>Now, we want to find out which words are important for each <em>community</em>, so we’re going to create several <strong><em>large documents, one for each community</em></strong>. Each document includes all the tokens of abstracts written by members of a given community.</li>
+</ol>
+<ul>
+<li>Consider a community <em>c</em></li>
+<li>Find all the abstracts of papers written by a member of community <em>c</em>.</li>
+<li>Create a long array that stores all the abstract tokens</li>
+<li>Repeat for all the communities. <strong>Note:</strong> Here, to ensure your code is efficient, you shall exploit <code>pandas</code> builtin functions, such as <a href="https://pandas.pydata.org/docs/reference/api/pandas.api.typing.DataFrameGroupBy.apply.html"><code>groupby.apply</code></a> or <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.explode.html"><code>explode</code></a>.</li>
+</ul>
+<ol start="3" type="1">
+<li>Now, we’re ready to calculate the TF for each word. Use the method of your choice to find the top 5 terms within the <strong>top 5 communities</strong> (by number of authors).</li>
+</ol>
+<ul>
+<li>Describe similarities and differences between the communities.</li>
+<li>Why aren’t the TFs not necessarily a good description of the communities?</li>
+<li>Next, we calculate IDF for every word.</li>
+<li>What base logarithm did you use? Is that important?</li>
+</ul>
+<ol start="4" type="1">
+<li>We’re ready to calculate TF-IDF. Do that for the <strong>top 9 communities</strong> (by number of authors). Then for each community:</li>
+</ol>
+<ul>
+<li>List the 10 top TF words</li>
+<li>List the 10 top TF-IDF words</li>
+<li>List the top 3 authors (by degree)</li>
+<li>Are these 10 words more descriptive of the community? If yes, what is it about IDF that makes the words more informative?</li>
+</ul>
 </blockquote>
-<div style="
-  border:1px solid #5b2ca0;
-  border-radius:10px;
-  margin:20px 0;
-  background:#ede0ff;
-  padding:22px;
-  color:#2b003d;
-  line-height:1.6;
-  max-width:100%;
-  box-sizing:border-box;
-  overflow-wrap:break-word;
-">
-<p>
-LLMs will likely not be able to solve this exercise correctly on their own (I tested GPT-5.2). The key is to break the problem into smaller subproblems by inspecting the HTML of the pages and identifying exactly which elements you need to extract. If you feel lazy, you can use an LLM to help write small, targeted functions for specific extraction steps. But make sure you carefully check the code and the output of each step. Iterate on your solution until the results are correct and complete.
-</p>
+<p><strong>Exercise 2: The Wordcloud</strong>. It’s time to visualize our results!</p>
+<blockquote class="blockquote">
+<ul>
+<li>Install the <a href="https://pypi.org/project/wordcloud/"><code>WordCloud</code></a> module.</li>
+<li>Now, create word-cloud for each community. Feel free to make it as fancy or non-fancy as you like.</li>
+<li>Make sure that, together with the word cloud, you print the names of the top three authors in each community (see my plot above for inspiration).</li>
+<li>Comment on your results. What can you conclude on the different sub-communities in Computational Social Science?</li>
+<li>Look up online the top author in each community. In light of your search, do your results make sense?</li>
+</ul>
+</blockquote>
+<p><strong>Exercise 3: Computational Social Science</strong></p>
+<blockquote class="blockquote">
+<ul>
+<li>In light of your data-driven analysis, has your understanding of the field changed? How?</li>
+</ul>
+</blockquote>
 
 
-</div>
 </section>
 
 </main> <!-- /main -->
